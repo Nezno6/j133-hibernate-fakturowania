@@ -12,7 +12,7 @@ public class KomendaUsunKontrachenta implements Komenda{
 
     @Override
     public String getKomenda() {
-        return "usun kontrachenta";
+        return "usun kontrachent";
     }
 
     @Override

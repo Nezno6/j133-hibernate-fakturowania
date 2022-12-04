@@ -1,8 +1,7 @@
 package pl.sda.j133.hibernate.fakturowania;
 
 import pl.sda.j133.hibernate.fakturowania.database.DataAccessObject;
-import pl.sda.j133.hibernate.fakturowania.komenda.Komenda;
-import pl.sda.j133.hibernate.fakturowania.komenda.KomendaDodajFirme;
+import pl.sda.j133.hibernate.fakturowania.komenda.*;
 import pl.sda.j133.hibernate.fakturowania.model.Firma;
 
 import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
@@ -12,7 +11,17 @@ public class Main {
     public static void main(String[] args) {
         //new DataAccessObject<Firma>().findAll(Firma.class);
         List<Komenda> listaKomend = List.of(
-                new KomendaDodajFirme()
+                new KomendaDodajFirme(),
+                new KomendaDodajFaktura(),
+                new KomendaDodajKontrachent(),
+
+                new KomendaListaFirma(),
+                new KomendaListaFaktura(),
+                new KomendaListaKontrachent(),
+
+                new KomendaUsunFirma(),
+                new KomendaUsunFaktura(),
+                new KomendaUsunKontrachenta()
         );
 
         String komenda;
@@ -21,6 +30,7 @@ public class Main {
             for (int i = 0; i < listaKomend.size(); i++) {
                 System.out.println((i + 1) + ". " + listaKomend.get(i).getKomenda());
             }
+            System.out.println("exit");
             System.out.println();
 
             System.out.println("Podaj komende:");

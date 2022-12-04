@@ -22,7 +22,7 @@ public class KomendaDodajFaktura implements Komenda{
 
     @Override
     public String getKomenda() {
-        return "dodaj fakture";
+        return "dodaj faktura";
     }
 
     @Override

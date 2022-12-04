@@ -4,10 +4,10 @@ import pl.sda.j133.hibernate.fakturowania.database.DataAccessObject;
 import pl.sda.j133.hibernate.fakturowania.model.Kontrachent;
 
 public class KomendaDodajKontrachent implements Komenda{
-    private DataAccessObject<Kontrachent> dao = new DataAccessObject<>();
+    private final DataAccessObject<Kontrachent> dao = new DataAccessObject<>();
     @Override
     public String getKomenda() {
-        return "dodaj kontrachenta";
+        return "dodaj kontrachent";
     }
 
     @Override

@@ -4,10 +4,10 @@ import pl.sda.j133.hibernate.fakturowania.database.DataAccessObject;
 import pl.sda.j133.hibernate.fakturowania.model.Firma;
 
 public class KomendaDodajFirme implements Komenda{
-private DataAccessObject<Firma> dao = new DataAccessObject<>();
+private final DataAccessObject<Firma> dao = new DataAccessObject<>();
     @Override
     public String getKomenda() {
-        return "dodaj firme";
+        return "dodaj firma";
     }
 
     @Override
