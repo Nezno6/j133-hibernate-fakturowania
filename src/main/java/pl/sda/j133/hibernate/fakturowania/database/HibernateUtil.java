@@ -1,4 +1,4 @@
-package pl.sda.j133.hibernate.warsztat;
+package pl.sda.j133.hibernate.fakturowania.database;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

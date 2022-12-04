@@ -1,9 +1,8 @@
-package pl.sda.j133.hibernate.warsztat;
+package pl.sda.j133.hibernate.fakturowania.database;
 
 import jakarta.persistence.TypedQuery;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import pl.sda.j133.hibernate.warsztat.model.Mechanik;
 
 import java.util.ArrayList;
 import java.util.List;
