@@ -1,7 +1,6 @@
 package pl.sda.j133.hibernate.fakturowania.komenda;
 
 import pl.sda.j133.hibernate.fakturowania.database.DataAccessObject;
-import pl.sda.j133.hibernate.fakturowania.model.Firma;
 import pl.sda.j133.hibernate.fakturowania.model.Kontrachent;
 
 import java.util.List;

@@ -1,10 +1,6 @@
 package pl.sda.j133.hibernate.fakturowania;
 
-import pl.sda.j133.hibernate.fakturowania.database.DataAccessObject;
 import pl.sda.j133.hibernate.fakturowania.komenda.*;
-import pl.sda.j133.hibernate.fakturowania.model.Firma;
-
-import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.List;
 
 public class Main {

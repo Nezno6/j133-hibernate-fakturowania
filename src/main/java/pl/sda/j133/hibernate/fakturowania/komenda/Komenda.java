@@ -1,5 +1,6 @@
 package pl.sda.j133.hibernate.fakturowania.komenda;
 
+import java.util.List;
 import java.util.Scanner;
 
 public interface Komenda {
